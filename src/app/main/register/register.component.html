@@ -1,0 +1,71 @@
+<div id="reg-form">
+    <h2>Register Now !</h2>
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label>Emp Name</label>
+        <input type="text" formControlName="EMpName" class="form-control"/>
+       
+    </div>
+    <div class="form-group">
+        <span>Gender</span>
+        <label>Male</label>
+        <input type="radio" value="male" formControlName="Gender"/>
+        <label>FeMale</label>
+        <input type="radio" value="female" formControlName="Gender"/>
+
+    </div>
+    <div class="form-group">
+        <span>Country</span>    
+        <label>India</label>
+        <input type="checkbox" value=true formControlName="Country"/>
+        <label>Out of India</label>
+        <input type="checkbox"  value=false formControlName="Country"/>
+    </div>
+
+    <div class="form-group">
+        <span>Emp Image</span>    
+        <input type="file" formControlName="EmpImage" />
+    </div>
+
+    <div class="form-group">
+        <label>Employee Basic Salary</label>
+        <input type="text" formControlName="EmpBasicSal" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label>Professional tax</label>
+        <input type="email" formControlName="ProTax" class="form-control"/>
+       
+    </div>
+    <div class="form-group">
+        <label>Employee PF</label>
+        <input type="text" formControlName="EmpPf" class="form-control">
+       
+    </div>
+    <div class="form-group">
+        <label>Total Salary Credited
+        </label>
+        <input type="text" formControlName="TotalSalCredit" class="form-control"/>
+    </div>
+
+    <div class="form-group">
+        <label>Emp Type
+        </label>
+        <select formControlName="EmpType">
+            <option>HR</option>
+            <option>ER</option>
+            <option>Junior</option>
+            <option>TL</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Detail   
+        </label>
+        <input type="text" formControlName="Detail" class="form-control"/>
+    </div>
+  
+    <div class="form-group" style="margin-top: 4%;">
+        <button type="submit" class="btn btn-primary">Register</button>
+    </div>
+</form>
+</div>

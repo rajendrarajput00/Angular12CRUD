@@ -1,0 +1,95 @@
+{
+  "user": [
+    {
+      "EMpName": "ttttttteeee",
+      "Gender": "",
+      "Country": "",
+      "EmpImage": "",
+      "EmpBasicSal": "40000",
+      "ProTax": "444",
+      "EmpPf": "3333",
+      "TotalSalCredit": "2222",
+      "EmpType": "Junior",
+      "Detail": "",
+      "id": 20
+    },
+    {
+      "EMpName": "pppppppppppp",
+      "Gender": "male",
+      "Country": true,
+      "EmpImage": "",
+      "EmpBasicSal": "111111111",
+      "ProTax": "1111",
+      "EmpPf": "11",
+      "TotalSalCredit": "1",
+      "EmpType": "Junior",
+      "Detail": "aaaaaaaaaaaaaaa",
+      "id": 21
+    },
+    {
+      "EMpName": "qqq",
+      "Gender": "female",
+      "Country": true,
+      "EmpImage": "",
+      "EmpBasicSal": "q",
+      "ProTax": "qq",
+      "EmpPf": "qq",
+      "TotalSalCredit": "qq",
+      "EmpType": "",
+      "Detail": "qqq",
+      "id": 23
+    },
+    {
+      "EMpName": "ttt",
+      "Gender": "female",
+      "Country": true,
+      "EmpImage": "C:\\fakepath\\Screenshot from 2022-05-23 19-29-15.png",
+      "EmpBasicSal": "tt",
+      "ProTax": "tt",
+      "EmpPf": "tt",
+      "TotalSalCredit": "tt",
+      "EmpType": "ER",
+      "Detail": "333",
+      "id": 24
+    },
+    {
+      "EMpName": "",
+      "Gender": "",
+      "Country": "",
+      "EmpImage": "",
+      "EmpBasicSal": "",
+      "ProTax": "",
+      "EmpPf": "",
+      "TotalSalCredit": "",
+      "EmpType": "",
+      "Detail": "",
+      "id": 25
+    },
+    {
+      "EMpName": "",
+      "Gender": "",
+      "Country": "",
+      "EmpImage": "",
+      "EmpBasicSal": "",
+      "ProTax": "",
+      "EmpPf": "",
+      "TotalSalCredit": "",
+      "EmpType": "",
+      "Detail": "",
+      "id": 26
+    },
+    {
+      "EMpName": "",
+      "Gender": "",
+      "Country": "",
+      "EmpImage": "",
+      "EmpBasicSal": "",
+      "ProTax": "",
+      "EmpPf": "",
+      "TotalSalCredit": "",
+      "EmpType": "",
+      "Detail": "",
+      "id": 27
+    }
+  ]
+}

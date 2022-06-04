@@ -1,1 +1,11 @@
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
+button.example-icon {
+    background: none;
+    color: #e0b600;
+    box-shadow: none;
+    border: none;
+}
+.mat-toolbar {
+    background: #000000;
+    color: #fff;
+}

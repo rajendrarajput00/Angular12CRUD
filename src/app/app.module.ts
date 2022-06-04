@@ -8,7 +8,8 @@ import { AppComponent } from './app.component';
 import { MatIconModule } from "@angular/material/icon";
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations"
-import {MatToolbarModule} from '@angular/material/toolbar'; 
+import {MatToolbarModule} from '@angular/material/toolbar';
+import{HttpClientModule} from '@angular/common/http'
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
   ],
 
   imports: [
+    HttpClientModule,
     CommonModule,
     BrowserModule,
     AppRoutingModule,

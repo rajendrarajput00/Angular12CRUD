@@ -1,2 +1,69 @@
-<p>home works!</p>
- <a class="button" routerLink="/main/login">Go to Login</a>
+<!-- <p>home works!</p> -->
+<div  fxLayout="row">
+        <div fxLayout="column" fxLayoutAlign="start">
+            <div class="example-container mat-elevation-z8" >
+                <table mat-table [dataSource]="dataSource" >
+                    <ng-container matColumnDef="sr_no" sticky>
+                        <th mat-header-cell *matHeaderCellDef class="mat-header-sr-no">Sr.No.</th>
+                        <td mat-cell *matCellDef="let element" class="mat-cell-sr-no">{{element.id}}
+                        </td>
+                    </ng-container>
+                    <ng-container matColumnDef="EMpName">
+                        <th mat-header-cell *matHeaderCellDef class="mat-header-name">Emp Name</th>
+                        <td mat-cell *matCellDef="let element" class="mat-cell-name">{{element.EMpName}}
+                        </td>
+                    </ng-container>
+                    <ng-container matColumnDef="Gender">
+                        <th mat-header-cell *matHeaderCellDef class="mat-header-name">Gender</th>
+                        <td mat-cell *matCellDef="let element" class="mat-cell-name">{{element.Gender}}
+                        </td>
+                    </ng-container>
+                    <ng-container matColumnDef="Country">
+                        <th mat-header-cell *matHeaderCellDef class="mat-header-name">Country</th>
+                        <td mat-cell *matCellDef="let element" class="mat-cell-name">{{element.Country?'India':'Out Of India'}}
+                        </td>
+                    </ng-container>
+                    <ng-container matColumnDef="EmpBasicSal">
+                        <th mat-header-cell *matHeaderCellDef class="mat-header-name">Employee Basic Salary</th>
+                        <td mat-cell *matCellDef="let element" class="mat-cell-name">{{element.EmpBasicSal}}
+                        </td>
+                    </ng-container>
+                    <ng-container matColumnDef="EmpPf">
+                        <th mat-header-cell *matHeaderCellDef class="mat-header-name">Employee PF</th>
+                        <td mat-cell *matCellDef="let element" class="mat-cell-name">{{element.EmpPf}}
+                        </td>
+                    </ng-container>
+                    <ng-container matColumnDef="TotalSalCredit">
+                        <th mat-header-cell *matHeaderCellDef class="mat-header-name">Total Salary Credited</th>
+                        <td mat-cell *matCellDef="let element" class="mat-cell-name">{{element.TotalSalCredit}}
+                        </td>
+                    </ng-container>
+                    <ng-container matColumnDef="EmpType">
+                        <th mat-header-cell *matHeaderCellDef class="mat-header-name">Emp Type</th>
+                        <td mat-cell *matCellDef="let element" class="mat-cell-name">{{element.EmpType}}
+                        </td>
+                    </ng-container>
+                    <ng-container matColumnDef="Detail">
+                        <th mat-header-cell *matHeaderCellDef class="mat-header-name">Detail</th>
+                        <td mat-cell *matCellDef="let element" class="mat-cell-name">{{element.Detail}}
+                        </td>
+                    </ng-container>
+                   
+                     <ng-container matColumnDef="action" sticky>
+                        <th mat-header-cell *matHeaderCellDef class="mat-header-action">Action</th>
+                        <td mat-cell *matCellDef="let element" class="mat-cell-action">
+                            <a href="javascript:void(0)"  (click)="editUserOpen(element)">
+                                <mat-icon class="mat-icon-edit">edit</mat-icon>
+                            </a>
+                            <a href="javascript:void(0)" (click)="deleteSingleUser(element.id)">
+                                <mat-icon class="mat-icon-clear" >clear</mat-icon>
+                            </a>
+                        </td>
+                    </ng-container>
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                </table>
+                <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[8, 25, 80]"  showFirstLastButtons></mat-paginator>
+            </div>
+        </div>
+</div>
